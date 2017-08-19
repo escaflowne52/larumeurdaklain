@@ -1534,10 +1534,10 @@ body {
     
     .widget {
         position: relative;
-        z-index: 0;
         margin: 0;
         min-width: 100px;
         flex: 1;
+        height: 80px;
     }
     
     .widget-area .widget-title {
@@ -1545,9 +1545,17 @@ body {
         font-size: 1.8rem;
     }
     
-    .widget li {
+    .widget ul {
         display: none;
     }
+    
+    .widget:hover ul {
+        display: block;
+        position: absolute;
+        font-size: 12px;
+        font-size: 1.2rem;
+    }
+
     /*
     .widget-area aside {
         margin: 0;
