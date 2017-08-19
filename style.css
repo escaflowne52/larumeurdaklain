@@ -3,7 +3,7 @@ Theme Name: larumeurdaklain
 Theme URI: http://larumeurdaklain.hopto.org
 Author: Jimmy CUISINIER alias Aklain52
 Author URI: http://larumeurdaklain.hopto.org
-Description: Thème personnel développé en 2017 pour l'usage exclusif du blog "La rumeur d'Aklain".
+Description: Thème personnel développé en 2017 pour le blog "La rumeur d'Aklain".
 Version: 0.1
 */
 
@@ -488,7 +488,7 @@ a:hover, a:active {
     color: var(--texte-orange);
 }
 
-.widget-area aside {
+.widget/*-area aside*/ {
     font-size: 16px;
     padding: 5px;
     margin: 5px;
@@ -504,7 +504,7 @@ a:hover, a:active {
     max-width: 300px;
 }
 
-.widget-area aside:hover {
+.widget/*-area aside*/:hover {
     border-color: var(--bordure-bleu);
     box-shadow: 0 0 20px 0 var(--ombre-bleu);
 }
@@ -1509,25 +1509,32 @@ body {
  */
 
 @media screen and (max-width:800px) {
+    html {
+        width: 100%;
+        margin: auto;
+    }
+    
     body {
         display: flex;
         flex-direction: column;
     }
     
     nav {
-        position: sticky;
-        top: 2px;
-        left: 1px;
         min-height: inherit;
+        width: 100%;
+        margin: auto;
     }
     
     .widget-area {
         display: flex;
-        width: 100%;
         flex-direction: row;
-        border: 
+        justify-content: space-around;
     }
     
+    .widget {
+        margin: 0;
+    }
+    /*
     .widget-area aside {
         margin: 0;
         background-color: var(--fond-noir);
@@ -1538,10 +1545,6 @@ body {
         -o-transition: all 500ms;
         transition: all 500ms;
         height: 55px;
-    }
-    
-    .widget-area aside ul {
-        height: 0px;
     }
     
     .widget-area .widget li {
@@ -1567,7 +1570,7 @@ body {
         -ms-transition: all 1s ease;
         -o-transition: all 1s ease;
         transition: all 1s ease;
-    }
+    }*/
     
 }
 
