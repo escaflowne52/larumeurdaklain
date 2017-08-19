@@ -1537,12 +1537,14 @@ body {
         margin: 0;
         min-width: 100px;
         flex: 1;
-        height: 80px;
+        z-index: 0;
     }
     
     .widget-area .widget-title {
         font-size: 18px;
         font-size: 1.8rem;
+        z-index: 1;
+        height: 40px;
     }
     
     .widget ul {
@@ -1551,9 +1553,14 @@ body {
     
     .widget:hover ul {
         display: block;
-        position: absolute;
-        font-size: 12px;
-        font-size: 1.2rem;
+        position: fixed;
+        z-index: 10;
+        left: 0px;
+        font-size: 18px;
+        font-size: 1.8rem;
+        background-color: var(--fond-noir);
+        width: 90%;
+        
     }
 
     /*
