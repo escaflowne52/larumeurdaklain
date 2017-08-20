@@ -102,6 +102,9 @@ body {
     --bordure-jaune: rgba(255,255,0,var(--transparence-bordure));
     --ombre-jaune: rgba(255,255,0,var(--transparence-ombre));
     --texte-neon-jaune: 0 0 1px rgba(255,255,255,.5), 0 0 3px rgba(255,255,255,.5), 0 0 5px var(--ombre-jaune), 0 0 8px var(--ombre-jaune), 0 0 10px var(--ombre-jaune), 0 0 15px var(--ombre-jaune), 0 0 20px var(--ombre-jaune);
+	
+	/* épaisseur des bordure */
+	--epaisseur-bordure: 2px;
 
     /* espace menu latéral gauche */
     /*--espace-menu: 20%;
@@ -294,8 +297,8 @@ dd {
 table,
 th,
 td {
-	border: 1px solid #eaeaea;
-	border: 1px solid rgba(51, 51, 51, 0.1);
+	border: var(--epaisseur-bordure) solid #eaeaea;
+	border: var(--epaisseur-bordure) solid rgba(51, 51, 51, 0.1);
 }
 
 table {
@@ -337,7 +340,7 @@ img {
 
 figure { /* Conteneur d'image avec légende */
 	margin: 1;
-    border: 2px solid rgba(30,150,255,0.9);
+    border: var(--epaisseur-bordure) solid rgba(30,150,255,0.9);
 	border-radius: 3px;
     background-color: rgba(0,0,0,0.5);
 }
@@ -448,7 +451,7 @@ a:hover, a:active {
     margin: 5px;
     cursor: pointer;
     background-color: var(--fond-noir);
-    border: 1px solid grey;
+    border: var(--epaisseur-bordure) solid grey;
     border-radius: 5px;
     font-family: Iceland, fantasy;
     font-size: 20px;
@@ -492,7 +495,7 @@ a:hover, a:active {
     padding: 5px;
     margin: 5px;
     background-color: var(--fond-noir);
-    border: 1px solid grey;
+    border: var(--epaisseur-bordure) solid grey;
     border-radius: 5px;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -519,7 +522,7 @@ a:hover, a:active {
     padding: 5px;
     margin: 5px;
     background-color: var(--fond-noir);
-    border: 1px solid grey;
+    border: var(--epaisseur-bordure) solid grey;
     border-radius: 5px;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -610,7 +613,7 @@ header a:hover {
     width: 30%;
     min-width: 400px;
     background-color: var(--fond-noir);
-    border: 2px solid var(--bordure-bleu);
+    border: var(--epaisseur-bordure) solid var(--bordure-bleu);
 	border-radius: 3px;
     margin: 5px;
     padding: 5px;
@@ -713,7 +716,7 @@ header a:hover {
     font-family: fantasy, serif;
     font-weight: 100;
     background-color: var(--fond-noir);
-    border: 2px solid grey;
+    border: var(--epaisseur-bordure) solid grey;
 	border-radius: 3px;
     margin: 5px;
     padding: 5px;
@@ -849,7 +852,7 @@ footer .colonne {
     padding: 5px;
     margin: 5px;
     background-color: var(--fond-noir);
-    border: 1px solid grey;
+    border: var(--epaisseur-bordure)solid grey;
     border-radius: 5px;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -1551,7 +1554,7 @@ body {
         font-size: 18px;
         font-size: 1.8rem;
         background-color: var(--fond-noir);
-		border: 2px solid var(--bordure-bleu);
+		border: var(--epaisseur-bordure) solid var(--bordure-bleu);
 		box-shadow: 0 0 20px 0 var(--ombre-bleu);
         border-radius: 5px;
 		padding: 5px;
