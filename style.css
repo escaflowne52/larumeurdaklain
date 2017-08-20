@@ -1551,6 +1551,11 @@ body {
         font-size: 18px;
         font-size: 1.8rem;
         background-color: var(--fond-noir);
+		border: 2px solid var(--bordure-bleu);
+		box-shadow: 0 0 20px 0 var(--ombre-bleu);
+        border-radius: 5px;
+		padding: 5px;
+        margin: 5px;
         width: 90%;
         
     }
@@ -1579,7 +1584,7 @@ body {
         padding: 5px;
         margin: 5px;
     }
-    
+	
     .widget-area .widget:hover, .widget-area .widget:active {
         min-width: 200px;
     }
