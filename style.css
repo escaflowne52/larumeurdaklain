@@ -1509,6 +1509,10 @@ body {
  */
 
 @media screen and (max-width:800px) {
+	body {
+		--hauteur-menu: 40px;
+	}
+	
     html {
         width: 100%;
         margin: auto;
@@ -1523,17 +1527,23 @@ body {
         min-height: inherit;
         width: 100%;
         margin: auto;
+		position: fixed;
     }
     
     .widget-area {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
+		height: var(--hauteur-menu);
     }
+	
+	header {
+		margin-top: calc((var(--hauteur-menu)) + 46px);
+		margin-top: -moz-calc((var(--hauteur-menu)) + 46px);
+		margin-top: -webkit-calc((var(--hauteur-menu)) + 46px);
+	}
     
     .widget {
-        position: relative;
         margin: 0;
         flex: 1;
     }
@@ -1541,14 +1551,13 @@ body {
     .widget-area .widget-title {
         font-size: 18px;
         font-size: 1.8rem;
-        height: 40px;
     }
     
     .widget ul {
         display: none;
     }
     
-    .widget:hover ul {
+    .widget:hover ul, .widget:active ul {
         display: block;
         position: fixed;
         left: 0px;

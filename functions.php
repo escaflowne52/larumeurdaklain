@@ -54,7 +54,7 @@ function neon_texte($categorie) {
         case 4: //Tests et avis
             $classe="pulsation_violet";
         break;
-        case 5:
+        case 5: //Dossiers
             $classe="pulsation_orange";
         break;
         case 6:
