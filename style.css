@@ -450,7 +450,6 @@ a:hover, a:active {
     background-color: var(--fond-noir);
     border: 1px solid grey;
     border-radius: 5px;
-    z-index: 0;
     font-family: Iceland, fantasy;
     font-size: 20px;
     font-size: 2rem;
@@ -495,7 +494,6 @@ a:hover, a:active {
     background-color: var(--fond-noir);
     border: 1px solid grey;
     border-radius: 5px;
-    z-index: 0;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -ms-transition: all 500ms;
@@ -523,7 +521,6 @@ a:hover, a:active {
     background-color: var(--fond-noir);
     border: 1px solid grey;
     border-radius: 5px;
-    z-index: 0;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -ms-transition: all 500ms;
@@ -854,7 +851,6 @@ footer .colonne {
     background-color: var(--fond-noir);
     border: 1px solid grey;
     border-radius: 5px;
-    z-index: 0;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -ms-transition: all 500ms;
@@ -1535,15 +1531,12 @@ body {
     .widget {
         position: relative;
         margin: 0;
-        min-width: 100px;
         flex: 1;
-        z-index: 0;
     }
     
     .widget-area .widget-title {
         font-size: 18px;
         font-size: 1.8rem;
-        z-index: 1;
         height: 40px;
     }
     
@@ -1554,7 +1547,6 @@ body {
     .widget:hover ul {
         display: block;
         position: fixed;
-        z-index: 10;
         left: 0px;
         font-size: 18px;
         font-size: 1.8rem;
