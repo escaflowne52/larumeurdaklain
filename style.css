@@ -44,7 +44,7 @@ Version: 0.1
  *      15.7 - néon rose
  *      15.8 - néon bleu statique
  * 16.0 - Media Queries
- *      16.1 - Mobile Large
+ *      16.1 - Tablettes
  */
 
 /*
@@ -1505,7 +1505,7 @@ body {
  * 16.0 - Media Queries ******************************************
  */
 /*
- *    16.1 - Mobile ----------------------------------------------
+ *    16.1 - Tablettes --------------------------------------------
  */
 
 @media screen and (max-width:800px) {
@@ -1538,9 +1538,7 @@ body {
     }
 	
 	header {
-		margin-top: calc((var(--hauteur-menu)) + 46px);
-		margin-top: -moz-calc((var(--hauteur-menu)) + 46px);
-		margin-top: -webkit-calc((var(--hauteur-menu)) + 46px);
+		margin-top: var(--hauteur-menu);
 	}
     
     .widget {
