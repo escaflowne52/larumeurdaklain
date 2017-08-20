@@ -887,6 +887,7 @@ body {
 /*
  *      15.1 - néon bleu------------------------------------------
  */
+/* par défaut */
 .pulsation_bleu {
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -973,7 +974,7 @@ body {
 /*
  *  15.2 - néon orange -------------------------------------------
  */
-/* menus */
+/* dossiers */
 .pulsation_orange {
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -1234,7 +1235,7 @@ body {
 /*
  *  15.5 - néon jaune --------------------------------------------
  */
-/* pas de catégorie */
+/* non classé */
 .pulsation_jaune {
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -1408,7 +1409,7 @@ body {
 /*
  *  15.7 - néon rose --------------------------------------------
  */
-/* sélection youtube */
+/*  */
 .pulsation_rose {
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
@@ -1559,7 +1560,7 @@ body {
         border-radius: 5px;
 		padding: 5px;
         margin: 5px;
-        width: 90%;
+        width: 98%;
         
     }
 
