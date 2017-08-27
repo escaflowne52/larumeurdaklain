@@ -45,6 +45,7 @@ Version: 0.1
  *      15.8 - néon bleu statique
  * 16.0 - Media Queries
  *      16.1 - Tablettes
+ *		16.2 - Smartphones
  */
 
 /*
@@ -392,7 +393,6 @@ body {
     0 /
     15px
     15px;
-    
     display: flex;
     justify-content: center;
 }
@@ -1611,6 +1611,16 @@ body {
     
 }
 
+/*
+ *    16.2 - Smartphones -------------------------------------------
+ */
+@media screen and (max-width:600px) {
+	body, article {
+		display: block;
+		margin: auto;
+	}
+	
+}
 /*
  * Print 
  */
