@@ -228,6 +228,10 @@ a img {
 /*
  * 2.0 - Icones et objets ****************************************
  */
+#searchsubmit {
+    font-family: dashicons;
+	content: "\f179";
+}
 
 /*
  * 3.0 Polices d'écriture - font *********************************
@@ -1618,6 +1622,11 @@ body {
 	body, article {
 		display: block;
 		margin: auto;
+	}
+	
+	.widget-area .widget-title {
+		font-size: 10px;
+		font-size: 1rem;
 	}
 	
 }

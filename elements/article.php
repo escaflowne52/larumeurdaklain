@@ -1,11 +1,13 @@
 <div class="texte">
     <?php
-    if (is_home()) {
-        //the_excerpt(); // résumé
-        the_content(lire_la_suite()); // introduction de l'article
+    if (is_single()) {
+		the_content(); 
     }
+	elseif (is_home() or is_front_page()){
+		the_content(lire_la_suite()); // introduction de l'article
+	}
     else {
-        the_content(); 
+        the_excerpt(); // résumé
     }
     ?>
 </div>

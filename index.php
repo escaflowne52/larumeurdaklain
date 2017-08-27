@@ -27,6 +27,21 @@
 
     <?php wp_head(); ?>
     <?php wp_footer(); ?>
+	
+	<?php if (is_user_logged_in()) { ?>
+		<style type="text/css">
+			body {
+				margin-top: 18px;
+			}
+			
+			@media screen and (max-width:800px) {
+				nav, body {
+					margin-top: 46px;
+				}
+			}
+			
+		</style>
+	<?php } ?>
 </head>
     <body>
         <nav class="sidebar">
