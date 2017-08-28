@@ -11,8 +11,8 @@ Version: 0.1
  * Table des matières
  * 0.0 - Variables
  * 1.0 - Initialisation
- * 2.0 - Icones et objets
- * 3.0 - Polices d'écriture - font
+ * 2.0 - Polices d'écriture - font
+ * 3.0 - Icones et objets
  * 4.0 - Eléments
  * 5.0 - Mise en forme
  * 6.0 - Navigations
@@ -226,15 +226,7 @@ a img {
 }
 
 /*
- * 2.0 - Icones et objets ****************************************
- */
-#searchsubmit {
-    font-family: dashicons;
-	content: "\f179";
-}
-
-/*
- * 3.0 Polices d'écriture - font *********************************
+ * 2.0 Polices d'écriture - font *********************************
  */
 @font-face
 {
@@ -264,6 +256,29 @@ a img {
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face
+{
+    font-family: 'FontAwesome';
+    src: url('police/FontAwesome/fontawesome-webfont.eot');
+    src: url('police/FontAwesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/FontAwesome/fontawesome-webfont.woff2') format('woff2'),
+         url('police/FontAwesome/fontawesome-webfont.woff') format('woff'),
+         url('police/FontAwesome/fontawesome-webfont.ttf') format('truetype'),
+         url('police/FontAwesome/fontawesome-webfont.svg#fff_tusjbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * 3.0 - Icones et objets ****************************************
+ */
+#searchsubmit {
+    font-family: FontAwesome;
+	content: "\f179";
+}
+
+
 
 /*
  * 4.0 Eléments***************************************************
@@ -1513,11 +1528,9 @@ body {
  */
 
 @media screen and (max-width:800px) {
-	body {
-		--hauteur-menu: 40px;
-	}
-	
+
     html {
+		--hauteur-menu: 40px;
         width: 100%;
         margin: auto;
     }
@@ -1525,6 +1538,7 @@ body {
     body {
         display: flex;
         flex-direction: column;
+		margin-top: 50px;
     }
     
     nav {

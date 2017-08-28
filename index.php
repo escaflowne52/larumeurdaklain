@@ -42,6 +42,9 @@
 			
 		</style>
 	<?php } ?>
+	
+	<script src="https://use.fontawesome.com/588a1a0084.js"></script>
+
 </head>
     <body>
         <nav class="sidebar">
