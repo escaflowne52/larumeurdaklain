@@ -273,9 +273,17 @@ a img {
 /*
  * 3.0 - Icones et objets ****************************************
  */
+#champ_de_recherche {
+	
+}
+
 #searchsubmit {
     font-family: FontAwesome;
 	content: "\f179";
+	color: white;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.5);
+	border: none;
 }
 
 
