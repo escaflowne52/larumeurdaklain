@@ -273,8 +273,12 @@ a img {
 /*
  * 3.0 - Icones et objets ****************************************
  */
+#recherche {
+	display: flex;
+}
+
 #champ_de_recherche {
-	
+	flex: 1;
 }
 
 #searchsubmit {
@@ -285,8 +289,6 @@ a img {
 	background-color: rgba(0,0,0,0.5);
 	border: none;
 }
-
-
 
 /*
  * 4.0 Eléments***************************************************
@@ -467,7 +469,10 @@ a:hover, a:active {
 /*
  *      6.2.1 - principal - header ...............................
  */
-
+#menu_principal {
+	margin-top: auto;
+	margin-bottom: auto;
+}
 .menu ul li {
     display: inline-block;
 }
@@ -1596,44 +1601,6 @@ body {
         width: 98%;
         
     }
-
-    /*
-    .widget-area aside {
-        margin: 0;
-        background-color: var(--fond-noir);
-        z-index: 0;
-        -webkit-transition: all 500ms;
-        -moz-transition: all 500ms;
-        -ms-transition: all 500ms;
-        -o-transition: all 500ms;
-        transition: all 500ms;
-        height: 55px;
-    }
-    
-    .widget-area .widget li {
-        background-color: var(--fond-noir);
-        border: 1px solid grey;
-        border-radius: 5px;
-        position: relative;
-        top: -500px;
-        border-color: var(--bordure-bleu);
-        box-shadow: 0 0 20px 0 var(--ombre-bleu);
-        padding: 5px;
-        margin: 5px;
-    }
-	
-    .widget-area .widget:hover, .widget-area .widget:active {
-        min-width: 200px;
-    }
-    
-    .widget-area .widget:hover li, .widget-area .widget:active li {
-        top: 0px;
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -ms-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        transition: all 1s ease;
-    }*/
     
 }
 
@@ -1646,9 +1613,17 @@ body {
 		margin: auto;
 	}
 	
+	body {
+		margin-top: 60px;
+	}
+	
 	.widget-area .widget-title {
 		font-size: 10px;
 		font-size: 1rem;
+	}
+	
+	#searchsubmit {
+		display: none;
 	}
 	
 }
