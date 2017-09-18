@@ -122,4 +122,6 @@ function lire_la_suite() {
 }
 add_filter( 'the_content_more_link', 'lire_la_suite' );
 
+// Ajout des images à la une
+add_theme_support('post-thumbnails');
 ?>
