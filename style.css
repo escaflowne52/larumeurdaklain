@@ -409,8 +409,8 @@ html {
     height: 100%;
 }
 
-body {
-    /* fond généré */
+/*body {
+    /* fond généré *//*
     background-color: #222222;
     background: repeating-linear-gradient(
       45deg,
@@ -424,7 +424,8 @@ body {
     15px;
     display: flex;
     justify-content: center;
-}
+}*/
+
 #contenu {
     
 }
