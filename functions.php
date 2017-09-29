@@ -109,11 +109,6 @@ wp_enqueue_style('dashicons');
 
 add_action('wp_enqueue_scripts', 'wpc_dashicons');
 
-/* archive
-$tableau_categories = get_the_category();
-$categorie_en_cours = $tableau_categories[0]->cat_name;
-$categorie_ID = get_cat_id($categorie_en_cours);
-*/
 
 // remplacement du raccourcis (suite...)
 
@@ -124,4 +119,5 @@ add_filter( 'the_content_more_link', 'lire_la_suite' );
 
 // Ajout des images à la une
 add_theme_support('post-thumbnails');
+
 ?>

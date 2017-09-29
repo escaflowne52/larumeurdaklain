@@ -22,6 +22,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<script type="text/javascript" src="matrix.js"></script>
     <!-- Import Google font 'Iceland' -->
     <link href="https://fonts.googleapis.com/css?family=Iceland|Press+Start+2P" rel="stylesheet">
 
