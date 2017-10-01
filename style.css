@@ -409,8 +409,16 @@ html {
     height: 100%;
 }
 
+	/* Fond dessinable par javascript */
+canvas {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}
+
 body {
-    /* fond généré *//*
+    /* fond généré */
     background-color: #222222;
     background: repeating-linear-gradient(
       45deg,
@@ -421,7 +429,7 @@ body {
     )
     0 /
     15px
-    15px;*/
+    15px;
     display: flex;
     justify-content: center;
 }
