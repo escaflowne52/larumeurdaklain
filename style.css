@@ -52,7 +52,7 @@ Version: 0.1
  * 0.0 - Variables ***********************************************
  */
 body {
-    --fond-noir: rgba(0,0,0,0.8);
+    --fond-noir: rgba(0,0,0,0.95);
     --transparence-bordure: 0.9;
     --transparence-ombre: 0.75;
     

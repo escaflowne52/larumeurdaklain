@@ -9,7 +9,7 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-	<canvas id="matrix">Votre navigateur ne supporte pas la balise HTML5 "canvas". Merci de le mettre à jour.</canvas>
+	
 <head>
     <title>
         <?php bloginfo( 'name' );
