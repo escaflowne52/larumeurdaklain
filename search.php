@@ -1,0 +1,1 @@
+<p>You searched for " <?php echo esc_html( get_search_query( false ) ); ?> ". Here are the results:</p>
