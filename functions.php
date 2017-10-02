@@ -39,7 +39,7 @@ add_action( 'widgets_init', 'aklain_widgets_init' );
 
 // Effet d'écriture néon avec couleur selon la catégorie
 function neon_texte($categorie) {
-    $classe = "";
+    $classe = "pulsation_bleu";
     
     switch($categorie) {
         case 1: //Non classé
@@ -120,12 +120,19 @@ add_filter( 'the_content_more_link', 'lire_la_suite' );
 // Ajout des images à la une
 add_theme_support('post-thumbnails');
 
-//Theme Javascript
+//Fonctions Javascript
 function theme_js(){
 	wp_enqueue_script( 'matrix',
 get_template_directory_uri() . '/js/matrix.js',
 array() );
 }
 add_action( 'wp_footer', 'theme_js' );
+
+// activation du php dans les articles
+function php_instructions($atts, $content) {
+	eval(do_shortcode($content)); 
+}
+
+add_shortcode(‘php’, ‘php_instructions’);
 
 ?>
