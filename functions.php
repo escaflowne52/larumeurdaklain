@@ -128,11 +128,15 @@ array() );
 }
 add_action( 'wp_footer', 'theme_js' );
 
-// activation du php dans les articles
-function php_instructions($atts, $content) {
+// activation du php dans les articles //HS
+/*function php_instructions($atts, $content) {
 	eval(do_shortcode($content)); 
 }
 
-add_shortcode(‘php’, ‘php_instructions’);
+add_shortcode(‘php’, ‘php_instructions’);*/
+
+// SECURITE
+// Masquer la version de Wordpress
+remove_action("wp_head", "wp_generator");
 
 ?>
